@@ -1,0 +1,107 @@
+NodeMCU ESP32 - Konnected Pro 1.0.0 build 2022-08-25 22:09 powered by Lua 5.1.4 [5.1-doublefp] on IDF v4.4-beta1-284-gd83021a6e8
+Heap: 	211428	Initializing Konnected (0xef24d7eba5bc)
+[INFO           41.651085,   207784] src/lfs/start.lua:13: Konnected Application Version:  1.3.2
+I (1307) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1307) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1317) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1357) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1417) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1427) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+[INFO           41.787558,   207120] src/lfs/wipe.lua:10: Checking for reset jumper
+I (1437) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (1447) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+[INFO           41.902471,   206368] src/lfs/network.lua:17: Setting up network..
+[INFO           41.921535,   205444] src/lfs/network.lua:226: Initializing ethernet..
+I (1597) esp_eth.netif.netif_glue: 24:d7:eb:a5:bc:53
+I (1597) esp_eth.netif.netif_glue: ethernet attached to netif
+> [INFO           43.713545,   192132] src/lfs/network.lua:213: Ethernet connected...disabling wifi
+[INFO           47.653511,   192464] src/lfs/network.lua:213: Ethernet connected...disabling wifi
+src/lfs/network.lua:214: attempt to index global 'wifiStartTimer' (a nil value)
+stack traceback:
+	src/lfs/network.lua:214: in function <src/lfs/network.lua:212>
+I (8227) esp_netif_handlers: eth ip: 192.168.1.67, mask: 255.255.255.0, gw: 192.168.1.254
+[INFO           49.582936,   191536] src/lfs/network.lua:50:  Network connection obtained with IP:  192.168.1.67 Gateway: 192.168.1.254
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6628
+load:0x40078000,len:14780
+load:0x40080400,len:3792
+entry 0x40080694
+I (27) boot: ESP-IDF v4.4-beta1-284-gd83021a6e8 2nd stage bootloader
+I (27) boot: compile time 22:12:33
+I (27) boot: chip revision: 1
+I (32) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (39) boot.esp32: SPI Speed      : 40MHz
+I (43) boot.esp32: SPI Mode       : DIO
+I (48) boot.esp32: SPI Flash Size : 4MB
+I (52) boot: Enabling RNG early entropy source...
+I (58) boot: Partition Table:
+I (61) boot: ## Label            Usage          Type ST Offset   Length
+I (69) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (76) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (84) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (91) boot:  3 ota_0            OTA app          00 10 00010000 00180000
+I (99) boot:  4 ota_1            OTA app          00 11 00190000 00180000
+I (106) boot:  5 lfs              unknown          c2 01 00310000 00058000
+I (114) boot:  6 spiffs           Unknown data     01 82 00368000 00098000
+I (121) boot: End of partition table
+I (125) boot_comm: chip revision: 1, min. application chip revision: 0
+I (133) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=280d8h (164056) map
+I (201) esp_image: segment 1: paddr=00038100 vaddr=3ffb0000 size=0375ch ( 14172) load
+I (206) esp_image: segment 2: paddr=0003b864 vaddr=40080000 size=047b4h ( 18356) load
+I (214) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=bf7f4h (784372) map
+I (499) esp_image: segment 4: paddr=000ff81c vaddr=400847b4 size=115e4h ( 71140) load
+I (528) esp_image: segment 5: paddr=00110e08 vaddr=400c0000 size=00064h (   100) load
+I (528) esp_image: segment 6: paddr=00110e74 vaddr=50000000 size=00010h (    16) load
+I (545) boot: Loaded app from partition at offset 0x10000
+I (545) boot: Disabling RNG early entropy source...
+I (557) cpu_start: Pro cpu up.
+I (557) cpu_start: Starting app cpu, entry point is 0x40081490
+I (544) cpu_start: App cpu up.
+I (573) cpu_start: Pro cpu start user code
+I (573) cpu_start: cpu freq: 240000000
+I (573) cpu_start: Application information:
+I (578) cpu_start: Project name:     nodemcu
+I (583) cpu_start: App version:      1.4.0-master_20151229-842-gb8ae
+I (590) cpu_start: Compile time:     Aug 25 2022 22:13:07
+I (596) cpu_start: ELF file SHA256:  e4e67c9cd794a96a...
+I (602) cpu_start: ESP-IDF:          v4.4-beta1-284-gd83021a6e8
+I (609) heap_init: Initializing. RAM available for dynamic allocation:
+I (616) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (622) heap_init: At 3FFB7D70 len 00028290 (160 KiB): DRAM
+I (628) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (634) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (641) heap_init: At 40095D98 len 0000A268 (40 KiB): IRAM
+I (648) spi_flash: detected chip: generic
+I (652) spi_flash: flash io: dio
+I (657) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (667) uart: queue free spaces: 3
+
+I (747) wifi:wifi driver task: 3ffc5c44, prio:23, stack:6656, core=0
+I (747) system_api: Base MAC address is not set
+I (747) system_api: read default base MAC address from EFUSE
+I (747) wifi:wifi firmware version: 0d44bbe
+I (757) wifi:wifi certification version: v7.0
+I (757) wifi:config NVS flash: enabled
+I (757) wifi:config nano formating: disabled
+I (767) wifi:Init data frame dynamic rx buffer num: 32
+I (767) wifi:Init management frame dynamic rx buffer num: 32
+I (777) wifi:Init management short buffer num: 32
+I (777) wifi:Init dynamic tx buffer num: 32
+I (787) wifi:Init static rx buffer size: 1600
+I (787) wifi:Init static rx buffer num: 10
+I (787) wifi:Init dynamic rx buffer num: 32
+I (797) wifi_init: rx ba win: 6
+I (797) wifi_init: tcpip mbox: 32
+I (807) wifi_init: udp mbox: 6
+I (807) wifi_init: tcp mbox: 6
+I (807) wifi_init: tcp tx win: 5744
+I (817) wifi_init: tcp rx win: 5744
+I (817) wifi_init: tcp mss: 1440
+I (827) wifi_init: WiFi IRAM OP enabled
+I (827) wifi_init: WiFi RX IRAM OP enabled
